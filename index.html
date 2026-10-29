@@ -1,234 +1,394 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lunch Lady — Menu</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,500;1,600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
-</head>
-<body>
-<div class="wrap">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lunch Lady — Menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <!-- HERO -->
+      <div class="hero">
+        <img
+          src="images/logo.png"
+          alt="Lunch Lady — Est. 1995, Saigon, Vietnam"
+        />
+        <p>Welcome — glad you're here.</p>
+        <div class="sub">Tap a ticket to see what's cooking</div>
+      </div>
 
-  <!-- HERO -->
-  <div class="hero">
-    <img src="images/logo.png" alt="Lunch Lady — Est. 1995, Saigon, Vietnam">
-    <p>Welcome — glad you're here.</p>
-    <div class="sub">Tap a ticket to see what's cooking</div>
-  </div>
+      <div class="rail"></div>
 
-  <div class="rail"></div>
+      <!-- TICKET NAV -->
+      <nav class="tickets" aria-label="Menu categories">
+        <a class="ticket" href="#small-plates">
+          <h2>Small Plates</h2>
+          <div class="divider"></div>
+          <div class="viet">Starters</div>
+        </a>
 
-  <!-- TICKET NAV -->
-  <nav class="tickets" aria-label="Menu categories">
-    <a class="ticket" href="#small-plates">
-      <h2>Small Plates</h2>
-      <div class="divider"></div>
-      <div class="viet">Starters</div>
-    </a>
+        <a class="ticket" href="#pho">
+          <h2>Phở</h2>
+          <div class="divider"></div>
+          <div class="viet">Beef Noodle Soup</div>
+        </a>
 
-    <a class="ticket" href="#pho">
-      <h2>Phở</h2>
-      <div class="divider"></div>
-      <div class="viet">Beef Noodle Soup</div>
-    </a>
+        <a class="ticket" href="#signatures">
+          <h2>Signatures / Main</h2>
+          <div class="divider"></div>
+          <div class="viet">Chicken &middot; Steak &middot; Pork</div>
+        </a>
 
-    <a class="ticket" href="#signatures">
-      <h2>Signatures / Main</h2>
-      <div class="divider"></div>
-      <div class="viet">Chicken &middot; Steak &middot; Pork</div>
-    </a>
+        <a class="ticket" href="#drinks">
+          <h2>Drinks</h2>
+          <div class="divider"></div>
+          <div class="viet">Refreshers</div>
+        </a>
+      </nav>
 
-    <a class="ticket" href="#drinks">
-      <h2>Drinks</h2>
-      <div class="divider"></div>
-      <div class="viet">Refreshers</div>
-    </a>
-  </nav>
+      <!-- SMALL PLATES -->
+      <section class="menu" id="small-plates">
+        <div class="head">
+          <h3>Small Plates</h3>
+          <span>Starters</span>
+        </div>
 
-  <!-- SMALL PLATES -->
-  <section class="menu" id="small-plates">
-    <div class="head">
-      <h3>Small Plates</h3>
-      <span>Starters</span>
-    </div>
-
-    <!-- Beef Carpaccio -->
-    <div class="dish flip" role="button" tabindex="0" aria-pressed="false" aria-label="Beef Carpaccio, tap to see photo">
-      <div class="flip-inner">
-        <div class="face front">
-          <div class="row"><strong>Beef Carpaccio</strong><span class="price">$24</span></div>
-          <p>Wagyu eye of round, peanuts, crispy shallots, thai basil, mint, perilla, lime vinaigrette.</p>
-          <div class="badges">
-            <button type="button" class="badge herb" data-tip="Topped with fresh herbs">🌿 Fresh Herbs</button>
+        <!-- Beef Carpaccio -->
+        <div
+          class="dish flip"
+          role="button"
+          tabindex="0"
+          aria-pressed="false"
+          aria-label="Beef Carpaccio, tap to see photo"
+        >
+          <div class="flip-inner">
+            <div class="face front">
+              <div class="row">
+                <strong>Beef Carpaccio</strong><span class="price">$24</span>
+              </div>
+              <p>
+                Wagyu eye of round, peanuts, crispy shallots, thai basil, mint,
+                perilla, lime vinaigrette.
+              </p>
+              <div class="badges">
+                <button
+                  type="button"
+                  class="badge herb"
+                  data-tip="Topped with fresh herbs"
+                >
+                  🌿 Fresh Herbs
+                </button>
+              </div>
+              <div class="addon">bánh hỏi +4</div>
+              <div class="hint">Tap to see photo</div>
+            </div>
+            <div class="face back">
+              <img
+                src="images/carpacio.jpg"
+                alt="Beef Carpaccio"
+                loading="lazy"
+              />
+              <div class="cap">
+                Beef Carpaccio<small>Tap to flip back</small>
+              </div>
+            </div>
           </div>
-          <div class="addon">bánh hỏi +4</div>
-          <div class="hint"> Tap to see photo</div>
         </div>
-        <div class="face back">
-          <img src="images/carpacio.jpg" alt="Beef Carpaccio" loading="lazy">
-          <div class="cap">Beef Carpaccio<small>Tap to flip back</small></div>
-        </div>
-      </div>
-    </div>
 
-    <!-- Crispy Prawns -->
-    <div class="dish flip" role="button" tabindex="0" aria-pressed="false" aria-label="Crispy Prawns, tap to see photo">
-      <div class="flip-inner">
-        <div class="face front">
-          <div class="row"><strong>Crispy Prawns</strong><span class="price">$24</span></div>
-          <p>Tiger prawns, floating shell, chili lime sauce.</p>
-          <div class="hint"> Tap to see photo</div>
-        </div>
-        <div class="face back">
-          <img src="images/prawns.jpg" alt="Crispy Prawns" loading="lazy">
-          <div class="cap">Crispy Prawns<small>Tap to flip back</small></div>
-        </div>
-      </div>
-    </div>
-
-    <a class="back-top" href="#top">Back to top ↑</a>
-  </section>
-
-  <!-- PHO -->
-  <section class="menu" id="pho">
-    <div class="head">
-      <h3>Phở</h3>
-      <span>Beef Noodle Soup</span>
-    </div>
-
-    <!-- Phở Bò -->
-    <div class="dish flip" role="button" tabindex="0" aria-pressed="false" aria-label="Phở Bò, tap to see photo">
-      <div class="flip-inner">
-        <div class="face front">
-          <div class="row"><strong>Phở Bò</strong><span class="price">$20</span></div>
-          <div class="eng">Beef Noodle Soup</div>
-          <p>Brisket, short plate, rare beef shoulder, rice noodles, 24-hour beef broth.</p>
-          <div class="badges">
-            <button type="button" class="badge herb" data-tip="Topped with fresh herbs on the side">🌿 Fresh Herbs</button>
-            <button type="button" class="badge protein-mid" data-tip="Broth served piping hot, table-side ready">🔥 Served Hot</button>
+        <!-- Crispy Prawns -->
+        <div
+          class="dish flip"
+          role="button"
+          tabindex="0"
+          aria-pressed="false"
+          aria-label="Crispy Prawns, tap to see photo"
+        >
+          <div class="flip-inner">
+            <div class="face front">
+              <div class="row">
+                <strong>Crispy Prawns</strong><span class="price">$24</span>
+              </div>
+              <p>Tiger prawns, floating shell, chili lime sauce.</p>
+              <div class="hint">Tap to see photo</div>
+            </div>
+            <div class="face back">
+              <img src="images/prawns.jpg" alt="Crispy Prawns" loading="lazy" />
+              <div class="cap">
+                Crispy Prawns<small>Tap to flip back</small>
+              </div>
+            </div>
           </div>
-          <div class="hint"> Tap to see photo</div>
         </div>
-        <div class="face back">
-          <img src="images/pho-bo.jpg" alt="Phở Bò" loading="lazy">
-          <div class="cap">Phở Bò<small>Tap to flip back</small></div>
+
+        <a class="back-top" href="#top">Back to top ↑</a>
+      </section>
+
+      <!-- PHO -->
+      <section class="menu" id="pho">
+        <div class="head">
+          <h3>Phở</h3>
+          <span>Beef Noodle Soup</span>
         </div>
-      </div>
+
+        <!-- Phở Bò -->
+        <div
+          class="dish flip"
+          role="button"
+          tabindex="0"
+          aria-pressed="false"
+          aria-label="Phở Bò, tap to see photo"
+        >
+          <div class="flip-inner">
+            <div class="face front">
+              <div class="row">
+                <strong>Phở Bò</strong><span class="price">$20</span>
+              </div>
+              <div class="eng">Beef Noodle Soup</div>
+              <p>
+                Brisket, short plate, rare beef shoulder, rice noodles, 24-hour
+                beef broth.
+              </p>
+              <div class="badges">
+                <button
+                  type="button"
+                  class="badge herb"
+                  data-tip="Topped with fresh herbs on the side"
+                >
+                  🌿 Fresh Herbs
+                </button>
+                <button
+                  type="button"
+                  class="badge protein-mid"
+                  data-tip="Broth served piping hot, table-side ready"
+                >
+                  🔥 Served Hot
+                </button>
+              </div>
+              <div class="hint">Tap to see photo</div>
+            </div>
+            <div class="face back">
+              <img src="images/pho-bo.jpg" alt="Phở Bò" loading="lazy" />
+              <div class="cap">Phở Bò<small>Tap to flip back</small></div>
+            </div>
+          </div>
+        </div>
+
+        <a class="back-top" href="#top">Back to top ↑</a>
+      </section>
+
+      <!-- SIGNATURES / MAIN -->
+      <section class="menu" id="signatures">
+        <div class="head">
+          <h3>Signatures / Main</h3>
+          <span>Cơm &amp; Món Chính</span>
+        </div>
+
+        <div class="banner"><span>Fuel Like You Mean It</span></div>
+
+        <!-- Chicken on Rice -->
+        <div
+          class="dish flip"
+          role="button"
+          tabindex="0"
+          aria-pressed="false"
+          aria-label="Chicken on Rice, tap to see photo"
+        >
+          <div class="flip-inner">
+            <div class="face front">
+              <div class="row">
+                <strong>Chicken on Rice</strong><span class="price">$24</span>
+              </div>
+              <p>
+                Char-grilled chicken thighs, pork crackling, green chili sauce.
+              </p>
+              <div class="hint">Tap to see photo</div>
+            </div>
+            <div class="face back">
+              <img
+                src="images/chicken-rice.jpg"
+                alt="Chicken on Rice"
+                loading="lazy"
+              />
+              <div class="cap">
+                Chicken on Rice<small>Tap to flip back</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Iberico Pork on Rice -->
+        <div
+          class="dish flip"
+          role="button"
+          tabindex="0"
+          aria-pressed="false"
+          aria-label="Iberico Pork on Rice, tap to see photo"
+        >
+          <div class="flip-inner">
+            <div class="face front">
+              <div class="row">
+                <strong>Iberico Pork on Rice</strong
+                ><span class="price">$28</span>
+              </div>
+              <p>6oz grilled coppa steak, pork crackling, green chili sauce.</p>
+              <div class="hint">Tap to see photo</div>
+            </div>
+            <div class="face back">
+              <img
+                src="images/iberico-pork.jpg"
+                alt="Iberico Pork on Rice"
+                loading="lazy"
+              />
+              <div class="cap">
+                Iberico Pork on Rice<small>Tap to flip back</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Wagyu Steak on Rice -->
+        <div
+          class="dish flip"
+          role="button"
+          tabindex="0"
+          aria-pressed="false"
+          aria-label="Wagyu Steak on Rice, tap to see photo"
+        >
+          <div class="flip-inner">
+            <div class="face front">
+              <div class="row">
+                <strong>Wagyu Steak on Rice</strong
+                ><span class="price">$36</span>
+              </div>
+              <p>6oz Carrara picanha, peppercorn sauce, watercress salad.</p>
+              <div class="hint">Tap to see photo</div>
+            </div>
+            <div class="face back">
+              <img
+                src="images/steak.jpg"
+                alt="Wagyu steak on rice"
+                loading="lazy"
+              />
+              <div class="cap">
+                Wagyu Steak on Rice<small>Tap to flip back</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p class="footnote">
+          * every main is served with jasmine rice, scallion oil, crispy rice
+          &amp; a fried egg
+        </p>
+
+        <a class="back-top" href="#top">Back to top ↑</a>
+      </section>
+
+      <!-- DRINKS -->
+      <section class="menu" id="drinks">
+        <div class="head">
+          <h3>Drinks</h3>
+          <span>Thức Uống</span>
+        </div>
+
+        <!-- Cà Phê Sữa Đá -->
+        <div
+          class="dish flip"
+          role="button"
+          tabindex="0"
+          aria-pressed="false"
+          aria-label="Cà Phê Sữa Đá, tap to see photo"
+        >
+          <div class="flip-inner">
+            <div class="face front">
+              <div class="row">
+                <strong>Cà Phê Sữa Đá</strong><span class="price">$7</span>
+              </div>
+              <div class="eng">Hanoi Drip Vietnamese Iced/Hot Coffee</div>
+              <div class="badges">
+                <button
+                  type="button"
+                  class="badge energy"
+                  data-tip="Caffeine kick to keep you going"
+                >
+                  <svg viewBox="0 0 24 24">
+                    <path d="M13 2 3 14h7l-1 8 10-12h-7z" /></svg
+                  >Energy Boost
+                </button>
+              </div>
+              <div class="hint">Tap to see photo</div>
+            </div>
+            <div class="face back">
+              <img
+                src="images/ca-phe-sua-da.jpg"
+                alt="Cà Phê Sữa Đá"
+                loading="lazy"
+              />
+              <div class="cap">
+                Cà Phê Sữa Đá<small>Tap to flip back</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sugarcane Drink -->
+        <div
+          class="dish flip"
+          role="button"
+          tabindex="0"
+          aria-pressed="false"
+          aria-label="Sugarcane Drink, tap to see photo"
+        >
+          <div class="flip-inner">
+            <div class="face front">
+              <div class="row">
+                <strong>Sugarcane Drink</strong><span class="price">TBD</span>
+              </div>
+              <div class="badges">
+                <button
+                  type="button"
+                  class="badge energy"
+                  data-tip="Natural sugars for a quick lift"
+                >
+                  <svg viewBox="0 0 24 24">
+                    <path d="M13 2 3 14h7l-1 8 10-12h-7z" /></svg
+                  >Energy Boost
+                </button>
+              </div>
+              <div class="hint">Tap to see photo</div>
+            </div>
+            <div class="face back">
+              <img
+                src="images/sugarcane-drink.jpg"
+                alt="Sugarcane Drink"
+                loading="lazy"
+              />
+              <div class="cap">
+                Sugarcane Drink<small>Tap to flip back</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a class="back-top" href="#top">Back to top ↑</a>
+      </section>
+
+      <footer>
+        <div class="est">Est. 1995 &middot; Saigon, Vietnam</div>
+        <p class="note">
+          Prices &amp; availability may vary. Ask your server about today's
+          specials.
+        </p>
+        <p>Made by karlojusto.ca</p>
+      </footer>
     </div>
-
-    <a class="back-top" href="#top">Back to top ↑</a>
-  </section>
-
-  <!-- SIGNATURES / MAIN -->
-  <section class="menu" id="signatures">
-    <div class="head">
-      <h3>Signatures / Main</h3>
-      <span>Cơm &amp; Món Chính</span>
-    </div>
-
-    <div class="banner"><span>Fuel Like You Mean It</span></div>
-
-    <!-- Chicken on Rice -->
-    <div class="dish flip" role="button" tabindex="0" aria-pressed="false" aria-label="Chicken on Rice, tap to see photo">
-      <div class="flip-inner">
-        <div class="face front">
-          <div class="row"><strong>Chicken on Rice</strong><span class="price">$24</span></div>
-          <p>Char-grilled chicken thighs, pork crackling, green chili sauce.</p>
-          <div class="hint"> Tap to see photo</div>
-        </div>
-        <div class="face back">
-          <img src="images/chicken-rice.jpg" alt="Chicken on Rice" loading="lazy">
-          <div class="cap">Chicken on Rice<small>Tap to flip back</small></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Iberico Pork on Rice -->
-    <div class="dish flip" role="button" tabindex="0" aria-pressed="false" aria-label="Iberico Pork on Rice, tap to see photo">
-      <div class="flip-inner">
-        <div class="face front">
-          <div class="row"><strong>Iberico Pork on Rice</strong><span class="price">$28</span></div>
-          <p>6oz grilled coppa steak, pork crackling, green chili sauce.</p>
-          <div class="hint"> Tap to see photo</div>
-        </div>
-        <div class="face back">
-          <img src="images/iberico-pork.jpg" alt="Iberico Pork on Rice" loading="lazy">
-          <div class="cap">Iberico Pork on Rice<small>Tap to flip back</small></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Wagyu Steak on Rice -->
-    <div class="dish flip" role="button" tabindex="0" aria-pressed="false" aria-label="Wagyu Steak on Rice, tap to see photo">
-      <div class="flip-inner">
-        <div class="face front">
-          <div class="row"><strong>Wagyu Steak on Rice</strong><span class="price">$36</span></div>
-          <p>6oz Carrara picanha, peppercorn sauce, watercress salad.</p>
-          <div class="hint"> Tap to see photo</div>
-        </div>
-        <div class="face back">
-          <img src="images/steak.jpg" alt="Wagyu steak on rice" loading="lazy">
-          <div class="cap">Wagyu Steak on Rice<small>Tap to flip back</small></div>
-        </div>
-      </div>
-    </div>
-
-    <p class="footnote">* every main is served with jasmine rice, scallion oil, crispy rice &amp; a fried egg</p>
-
-    <a class="back-top" href="#top">Back to top ↑</a>
-  </section>
-
-  <!-- DRINKS -->
-  <section class="menu" id="drinks">
-    <div class="head">
-      <h3>Drinks</h3>
-      <span>Thức Uống</span>
-    </div>
-
-    <!-- Cà Phê Sữa Đá -->
-    <div class="dish flip" role="button" tabindex="0" aria-pressed="false" aria-label="Cà Phê Sữa Đá, tap to see photo">
-      <div class="flip-inner">
-        <div class="face front">
-          <div class="row"><strong>Cà Phê Sữa Đá</strong><span class="price">$7</span></div>
-          <div class="eng">Hanoi Drip Vietnamese Iced/Hot Coffee</div>
-          <div class="badges"><button type="button" class="badge energy" data-tip="Caffeine kick to keep you going"><svg viewBox="0 0 24 24"><path d="M13 2 3 14h7l-1 8 10-12h-7z"/></svg>Energy Boost</button></div>
-          <div class="hint"> Tap to see photo</div>
-        </div>
-        <div class="face back">
-          <img src="images/ca-phe-sua-da.jpg" alt="Cà Phê Sữa Đá" loading="lazy">
-          <div class="cap">Cà Phê Sữa Đá<small>Tap to flip back</small></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Sugarcane Drink -->
-    <div class="dish flip" role="button" tabindex="0" aria-pressed="false" aria-label="Sugarcane Drink, tap to see photo">
-      <div class="flip-inner">
-        <div class="face front">
-          <div class="row"><strong>Sugarcane Drink</strong><span class="price">TBD</span></div>
-          <div class="badges"><button type="button" class="badge energy" data-tip="Natural sugars for a quick lift"><svg viewBox="0 0 24 24"><path d="M13 2 3 14h7l-1 8 10-12h-7z"/></svg>Energy Boost</button></div>
-          <div class="hint"> Tap to see photo</div>
-        </div>
-        <div class="face back">
-          <img src="images/sugarcane-drink.jpg" alt="Sugarcane Drink" loading="lazy">
-          <div class="cap">Sugarcane Drink<small>Tap to flip back</small></div>
-        </div>
-      </div>
-    </div>
-
-    <a class="back-top" href="#top">Back to top ↑</a>
-  </section>
-
-  <footer>
-    <div class="est">Est. 1995 &middot; Saigon, Vietnam</div>
-    <p class="note">Prices &amp; availability may vary. Ask your server about today's specials.</p>
-    <p>Made by karlojusto.ca</p>
-  </footer>
-
-</div>
-<script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
